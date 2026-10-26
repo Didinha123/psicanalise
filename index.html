@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Psicanálise — Um espaço para se escutar, compreender e transformar</title>
-  <meta name="description" content="Atendimento psicanalítico com escuta cuidadosa, ética e sigilo. Converse e conheça o trabalho.">
+  <title>Wellington Aparecido | Psicanalista — Atendimento online</title>
+  <meta name="description" content="Psicanálise com escuta cuidadosa, ética e sigilo. Atendimento online com Wellington Aparecido. Agende uma conversa pelo WhatsApp.">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wellington Aparecido | Psicanalista">
+  <meta property="og:description" content="Um espaço para se escutar, compreender e transformar. Atendimento psicanalítico online.">
+  <meta property="og:image" content="hero-1.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%234f6249'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%23f6f1e8'%3EW%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,20 +20,21 @@
 <body data-page="home">
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-  <!-- Ícones (sprite). Usados nos cards via <use href="#i-...">. -->
+  <!-- Ícones (sprite). Usados via <use href="#i-...">. -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
-      <symbol id="i-ouvido" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9a5 5 0 0 1 10 0c0 2.500-2 3.200-2.500 5-.4 1.700-1.200 3-3 3a3 3 0 0 1-3-3"/><path d="M10 9a2 2 0 0 1 4 0c0 1-1 1.500-1 2.500"/></symbol>
+      <symbol id="i-ouvido" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9a5 5 0 0 1 10 0c0 2.5-2 3.2-2.5 5-.4 1.7-1.2 3-3 3a3 3 0 0 1-3-3"/><path d="M10 9a2 2 0 0 1 4 0c0 1-1 1.5-1 2.5"/></symbol>
       <symbol id="i-sofa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3"/><path d="M2 14a2 2 0 0 1 4 0v1h12v-1a2 2 0 0 1 4 0v4H2z"/><path d="M5 18v2M19 18v2"/></symbol>
-      <symbol id="i-folha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19c3-4 6-6.500 9-8"/></symbol>
+      <symbol id="i-folha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19c3-4 6-6.5 9-8"/></symbol>
       <symbol id="i-espelho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="6" ry="7"/><path d="M12 16v5M8 21h8"/></symbol>
       <symbol id="i-tela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
       <symbol id="i-casa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-6h4v6"/></symbol>
       <symbol id="i-vinculo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/></symbol>
       <symbol id="i-onda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/></symbol>
-      <symbol id="i-caminho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c0-5-6-5-6-9a6 6 0 0 1 12 0c0 4-6 4-6 9z"/><circle cx="12" cy="12" r="1.500"/></symbol>
-      <symbol id="i-ciclo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-14 5.300M4 12a8 8 0 0 1 14-5.300"/><path d="M18 3v4h-4M6 21v-4h4"/></symbol>
+      <symbol id="i-caminho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c0-5-6-5-6-9a6 6 0 0 1 12 0c0 4-6 4-6 9z"/><circle cx="12" cy="12" r="1.5"/></symbol>
+      <symbol id="i-ciclo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-14 5.3M4 12a8 8 0 0 1 14-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></symbol>
       <symbol id="i-cadeado" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-relogio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
     </defs>
   </svg>
 
@@ -40,20 +47,32 @@
     <section class="hero" id="inicio" aria-labelledby="hero-titulo">
       <div class="container hero__grid">
         <div class="hero__texto reveal">
-          <span class="eyebrow">Psicanálise · Escuta · Acolhimento</span>
+          <span class="eyebrow">Psicanálise · Atendimento online</span>
           <h1 id="hero-titulo">Um espaço para se <em>escutar</em>, compreender e transformar.</h1>
           <p class="hero__sub">A psicanálise pode ajudar você a compreender seus sentimentos, reconhecer padrões e construir novas formas de se relacionar consigo mesmo e com o mundo.</p>
           <div class="hero__acoes">
             <a class="btn btn--primario" href="#" data-wa>Agendar uma conversa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             <a class="btn btn--secundario" href="#sobre">Conheça meu trabalho</a>
           </div>
-          <p class="hero__nota">Aqui, você é recebido(a) com respeito e sigilo, no seu ritmo. A psicanálise é um processo singular: não há promessas de resultados nem de prazos.</p>
+          <p class="hero__nota">Aqui você encontra acolhimento, respeito e sigilo, no seu ritmo. A psicanálise é um processo singular: não há promessas de resultados nem de prazos.</p>
         </div>
         <div class="hero__imagem reveal">
-          <img src="hero-1.jpg" alt="Pessoa em momento de quietude e reflexão ao pôr do sol" width="900" height="1046" fetchpriority="high">
+          <img class="hero__foto1" src="hero-1.jpg" alt="Pessoa em momento de quietude e reflexão ao pôr do sol" width="900" height="1046" fetchpriority="high">
           <img class="hero__foto2" src="hero-2.jpg" alt="Árvore frondosa com raios de sol entre as folhas" width="900" height="1350" loading="lazy">
-          <span class="hero__selo"><i aria-hidden="true"></i>Atendimento online</span>
+          <div class="hero__cartao">
+            <span class="icone" aria-hidden="true"><svg><use href="#i-tela"/></svg></span>
+            <div><strong>Atendimento online</strong><span>Por videochamada, com sigilo</span></div>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <ul class="confianca reveal">
+          <li><span class="icone" aria-hidden="true"><svg><use href="#i-tela"/></svg></span><div><strong>100% online</strong><span>No conforto do seu lugar</span></div></li>
+          <li><span class="icone" aria-hidden="true"><svg><use href="#i-cadeado"/></svg></span><div><strong>Sigilo e ética</strong><span>Em todas as etapas</span></div></li>
+          <li><span class="icone" aria-hidden="true"><svg><use href="#i-ouvido"/></svg></span><div><strong>Escuta sem julgamento</strong><span>Cada história importa</span></div></li>
+          <li><span class="icone" aria-hidden="true"><svg><use href="#i-relogio"/></svg></span><div><strong>Seu ritmo</strong><span>Horários combinados com você</span></div></li>
+        </ul>
       </div>
     </section>
 
@@ -62,28 +81,35 @@
       <div class="container sobre__grid">
         <div class="sobre__foto reveal">
           <!-- Foto profissional: arquivo foto.webp (mesma pasta do index.html) -->
-          <img src="foto.webp" alt="Retrato de Wellington Aparecido, psicanalista" loading="lazy" width="600" height="750">
+          <img src="foto.webp" alt="Retrato de Wellington Aparecido, psicanalista" loading="lazy" width="1090" height="1443">
+          <div class="sobre__cartao"><strong data-nome>Wellington Aparecido</strong><span>Psicanalista</span></div>
         </div>
-        <div class="reveal">
+        <div class="sobre__texto reveal">
           <span class="eyebrow">Sobre mim</span>
           <h2 id="sobre-titulo">Prazer, sou <span data-nome>Wellington Aparecido</span>.</h2>
-          <p>Sou psicanalista e ofereço um espaço de escuta cuidadosa, ética e sigilosa, em atendimento online. Se você deseja conhecer o trabalho ou tirar dúvidas, será um prazer conversar.</p>
-          <p><strong>Contato:</strong> WhatsApp <a href="#" data-wa data-fone></a></p>
-          <div class="bloco-editavel">
-            <h3>Formação e qualificações</h3>
-            <ul class="lista-check">
-              <li>Formação em Psicanálise, com estudo contínuo da teoria e da clínica psicanalítica</li>
-              <li>Aprimoramento constante por meio de cursos, leituras e grupos de estudo</li>
-              <li>Compromisso com a ética profissional e o sigilo no atendimento</li>
-            </ul>
-          </div>
-          <div class="bloco-editavel">
-            <h3>Abordagem e experiência</h3>
-            <p>Meu trabalho parte da escuta: cada pessoa é única, e o ritmo do processo é construído em conjunto. Não há fórmulas prontas nem respostas apressadas — há um espaço seguro para falar livremente e compreender melhor sentimentos, escolhas e relações.</p>
-            <p>Atendo online, com foco no acolhimento, na ética e na construção de um vínculo de confiança.</p>
+          <p class="lead">Sou psicanalista e ofereço um espaço de escuta cuidadosa, ética e sigilosa, em atendimento online.</p>
+          <blockquote class="citacao">Cada pessoa é única, e o ritmo do processo é construído em conjunto.</blockquote>
+          <div class="sobre__blocos">
+            <div class="sobre__bloco">
+              <h3>Formação e qualificações</h3>
+              <ul class="lista-check">
+                <li>Formação em Psicanálise, com estudo contínuo da teoria e da clínica psicanalítica</li>
+                <li>Aprimoramento constante por meio de cursos, leituras e grupos de estudo</li>
+                <li>Compromisso com a ética profissional e o sigilo no atendimento</li>
+              </ul>
+            </div>
+            <div class="sobre__bloco">
+              <h3>Abordagem e experiência</h3>
+              <p>Meu trabalho parte da escuta: não há fórmulas prontas nem respostas apressadas — há um espaço seguro para falar livremente e compreender melhor sentimentos, escolhas e relações.</p>
+              <p>Atendo online, com foco no acolhimento, na ética e na construção de um vínculo de confiança.</p>
+            </div>
           </div>
           <h3>Como funciona o acolhimento</h3>
           <p>Antes de qualquer decisão, propomos uma conversa inicial para que você conheça o formato do trabalho, tire dúvidas e perceba se faz sentido para você. Não há pressa nem cobrança por respostas prontas.</p>
+          <div class="sobre__contato">
+            <a class="btn btn--primario" href="#" data-wa>Conversar pelo WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <span class="sobre__fone"><small>WhatsApp</small><strong data-fone></strong></span>
+          </div>
         </div>
       </div>
     </section>
@@ -97,36 +123,12 @@
           <p class="lead">Um método de escuta e reflexão que busca compreender o que move nossos sentimentos, escolhas e relações.</p>
         </div>
         <div class="grade grade--3">
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-espelho"/></svg></div>
-            <h3>O que é a psicanálise</h3>
-            <p>Criada por Sigmund Freud, a psicanálise parte da ideia de que nem tudo o que sentimos e fazemos é plenamente consciente. Ao falar livremente, aos poucos novos sentidos podem surgir.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-sofa"/></svg></div>
-            <h3>Como são as sessões</h3>
-            <p>São encontros de conversa em que você fala o que vier à mente, no seu ritmo. Quem escuta acompanha com atenção, sem julgamentos. Frequência e duração são combinadas entre as partes.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-caminho"/></svg></div>
-            <h3>O que pode ser explorado</h3>
-            <p>Angústias, dilemas, relações, lutos, escolhas, repetições e dúvidas sobre si mesmo — o que for importante para você, no tempo que for possível.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-ouvido"/></svg></div>
-            <h3>A importância da escuta</h3>
-            <p>Ser escutado sem pressa nem julgamento permite ouvir a si mesmo de outra forma. A escuta é a base de todo o processo.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-folha"/></svg></div>
-            <h3>Reflexão e autoconhecimento</h3>
-            <p>Não se trata de receber conselhos ou fórmulas, mas de construir, aos poucos, uma compreensão própria sobre sua história e seus desejos.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-tela"/></svg></div>
-            <h3>Atendimento online</h3>
-            <p>As sessões acontecem por videochamada, com a mesma escuta cuidadosa e o mesmo sigilo, no conforto do lugar que você escolher.</p>
-          </article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-espelho"/></svg></div><h3>O que é a psicanálise</h3><p>Criada por Sigmund Freud, a psicanálise parte da ideia de que nem tudo o que sentimos e fazemos é plenamente consciente. Ao falar livremente, aos poucos novos sentidos podem surgir.</p></article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-sofa"/></svg></div><h3>Como são as sessões</h3><p>São encontros de conversa em que você fala o que vier à mente, no seu ritmo. Quem escuta acompanha com atenção, sem julgamentos. Frequência e duração são combinadas entre as partes.</p></article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-caminho"/></svg></div><h3>O que pode ser explorado</h3><p>Angústias, dilemas, relações, lutos, escolhas, repetições e dúvidas sobre si mesmo — o que for importante para você, no tempo que for possível.</p></article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-ouvido"/></svg></div><h3>A importância da escuta</h3><p>Ser escutado sem pressa nem julgamento permite ouvir a si mesmo de outra forma. A escuta é a base de todo o processo.</p></article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-folha"/></svg></div><h3>Reflexão e autoconhecimento</h3><p>Não se trata de receber conselhos ou fórmulas, mas de construir, aos poucos, uma compreensão própria sobre sua história e seus desejos.</p></article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-tela"/></svg></div><h3>Atendimento online</h3><p>As sessões acontecem por videochamada, com a mesma escuta cuidadosa e o mesmo sigilo, no conforto do lugar que você escolher.</p></article>
         </div>
       </div>
     </section>
@@ -142,35 +144,44 @@
         <div class="grade grade--3">
           <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-onda"/></svg></div><h3>Ansiedade e preocupações</h3><p>Pensamentos que voltam o tempo todo e dificultam o descanso e as decisões do dia a dia.</p></article>
           <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-vinculo"/></svg></div><h3>Dificuldades nos relacionamentos</h3><p>Conflitos, distanciamentos ou dificuldade em criar e sustentar vínculos afetivos.</p></article>
-          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-espelho"/></svg></div><h3>Autoconhecimento</h3><p>O desejo de entender melhor a si mesmo(a), seus valores, escolhas e modos de agir.</p></article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-espelho"/></svg></div><h3>Autoconhecimento</h3><p>O desejo de entender melhor a si mesmo, seus valores, escolhas e modos de agir.</p></article>
           <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-ciclo"/></svg></div><h3>Mudanças e momentos difíceis</h3><p>Perdas, transições, decisões importantes e fases de transformação na vida.</p></article>
-          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-casa"/></svg></div><h3>Inseguranças e conflitos internos</h3><p>Sentimentos contraditórios, autocrítica excessiva ou a sensação de estar dividido(a).</p></article>
+          <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-casa"/></svg></div><h3>Inseguranças e conflitos internos</h3><p>Sentimentos contraditórios, autocrítica excessiva ou a sensação de estar dividido.</p></article>
           <article class="card reveal"><div class="icone"><svg aria-hidden="true"><use href="#i-caminho"/></svg></div><h3>Padrões que se repetem</h3><p>Situações, escolhas ou reações emocionais parecidas que se repetem ao longo da vida.</p></article>
         </div>
         <p class="aviso reveal"><strong>Importante:</strong> a psicanálise é um processo individual e não garante cura nem resultados específicos. Ela não substitui, automaticamente, acompanhamento médico, psiquiátrico ou outros cuidados de saúde — quando necessário, esses cuidados podem caminhar juntos.</p>
       </div>
     </section>
 
-    <!-- ============ MODALIDADES ============ -->
+    <!-- ============ ATENDIMENTO ============ -->
     <section class="section" id="atendimento" aria-labelledby="atend-titulo">
       <div class="container">
         <div class="section__head section__head--center reveal">
-          <span class="eyebrow">Modalidades</span>
-          <h2 id="atend-titulo">Formas de atendimento</h2>
-          <p class="lead">Informações como duração, frequência e valores são combinadas diretamente na conversa inicial.</p>
+          <span class="eyebrow">Atendimento</span>
+          <h2 id="atend-titulo">Como começar</h2>
+          <p class="lead">Um caminho simples, sem pressa e sem compromisso inicial.</p>
         </div>
-        <div class="grade grade--2">
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-tela"/></svg></div>
+        <div class="passos">
+          <div class="passo reveal"><h3>Primeira mensagem</h3><p>Você chama pelo WhatsApp e diz que deseja conversar. Não é preciso contar nada pessoal nesse momento.</p></div>
+          <div class="passo reveal"><h3>Conversa inicial</h3><p>Um primeiro encontro online para conhecer o formato do trabalho, tirar dúvidas e sentir se faz sentido para você.</p></div>
+          <div class="passo reveal"><h3>Combinados</h3><p>Definimos juntos frequência, duração e horários, com clareza e transparência.</p></div>
+        </div>
+
+        <div class="modalidade reveal">
+          <div class="modalidade__texto">
+            <span class="icone"><svg aria-hidden="true"><use href="#i-tela"/></svg></span>
             <h3>Atendimento online</h3>
             <p>Sessões por videochamada, para quem prefere o conforto de estar em casa ou mora em outra cidade. Basta um lugar reservado e uma conexão estável.</p>
+            <p>Informações como duração, frequência e valores são combinadas diretamente na conversa inicial.</p>
+          </div>
+          <div class="modalidade__lado">
             <ul class="card__meta">
               <li><strong>Modalidade</strong><span>Videochamada</span></li>
               <li><strong>Duração</strong><span>Combinada na conversa inicial</span></li>
               <li><strong>Frequência</strong><span>Combinada na conversa inicial</span></li>
             </ul>
             <a class="btn btn--primario btn--bloco" href="#" data-wa data-wa-msg="Olá! Gostaria de consultar a disponibilidade para atendimento online.">Consultar disponibilidade</a>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -201,29 +212,31 @@
           <p class="lead">Textos educativos sobre escuta, emoções e relações. Não substituem avaliação profissional individual.</p>
         </div>
         <div class="grade grade--3" id="lista-artigos" data-limite="3"></div>
-        <p style="margin-top:2.5rem;text-align:center"><a class="btn btn--secundario" href="#/artigos">Ver todos os artigos</a></p>
+        <p style="margin-top:3rem;text-align:center"><a class="btn btn--secundario" href="#/artigos">Ver todos os artigos</a></p>
       </div>
     </section>
 
     <!-- ============ FAQ ============ -->
     <!-- Edite as respostas livremente. Cada item precisa de id/aria-controls correspondentes. -->
     <section class="section section--salvia" id="faq" aria-labelledby="faq-titulo">
-      <div class="container">
-        <div class="section__head section__head--center reveal">
+      <div class="container faq__layout">
+        <div class="faq__lateral reveal">
           <span class="eyebrow">Dúvidas frequentes</span>
           <h2 id="faq-titulo">Perguntas e respostas</h2>
+          <p class="lead">Não encontrou o que procurava? Envie uma mensagem — será um prazer esclarecer.</p>
+          <a class="btn btn--primario" href="#" data-wa data-wa-msg="Olá! Tenho uma dúvida sobre os atendimentos.">Tirar uma dúvida</a>
         </div>
         <div class="faq reveal">
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-1" id="faq-b1">O que é psicanálise?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
             <div class="faq__resposta" id="faq-1" role="region" aria-labelledby="faq-b1"><div><p>A psicanálise é uma prática de escuta e um campo de conhecimento criados por Sigmund Freud. Por meio da fala livre, busca-se compreender aspectos do funcionamento psíquico que nem sempre são conscientes, como desejos, conflitos e repetições.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-2" id="faq-b2">Como funciona a primeira sessão?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
-            <div class="faq__resposta" id="faq-2" role="region" aria-labelledby="faq-b2"><div><p>Em geral, é uma conversa de acolhimento em que você conta o que o(a) trouxe até aqui, tira dúvidas sobre o formato do trabalho e avalia se deseja seguir. Não é necessário preparar nada.</p></div></div></div>
+            <div class="faq__resposta" id="faq-2" role="region" aria-labelledby="faq-b2"><div><p>Em geral, é uma conversa de acolhimento em que você conta o que o trouxe até aqui, tira dúvidas sobre o formato do trabalho e avalia se deseja seguir. Não é necessário preparar nada.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-3" id="faq-b3">Quanto tempo dura uma sessão?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
-            <div class="faq__resposta" id="faq-3" role="region" aria-labelledby="faq-b3"><div><p>A duração e a frequência são combinadas na conversa inicial, conforme o formato de trabalho do profissional.</p></div></div></div>
+            <div class="faq__resposta" id="faq-3" role="region" aria-labelledby="faq-b3"><div><p>A duração e a frequência são combinadas na conversa inicial, conforme o formato de trabalho.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-4" id="faq-b4">O atendimento pode ser online?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
             <div class="faq__resposta" id="faq-4" role="region" aria-labelledby="faq-b4"><div><p>Sim. O atendimento é realizado exclusivamente online, por videochamada, em ambiente reservado e com conexão estável.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-5" id="faq-b5">Como posso agendar?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
-            <div class="faq__resposta" id="faq-5" role="region" aria-labelledby="faq-b5"><div><p>Pelo botão “Agendar uma conversa”, que abre o WhatsApp com uma mensagem pronta, ou pelo formulário de contato abaixo. Este site não possui sistema automático de agenda: os horários são combinados diretamente com o profissional.</p></div></div></div>
+            <div class="faq__resposta" id="faq-5" role="region" aria-labelledby="faq-b5"><div><p>Pelo botão “Agendar uma conversa”, que abre o WhatsApp com uma mensagem pronta, ou pelo formulário de contato. Os horários são combinados diretamente, conforme a disponibilidade.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-6" id="faq-b6">Como funciona a confidencialidade?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
             <div class="faq__resposta" id="faq-6" role="region" aria-labelledby="faq-b6"><div><p>O sigilo é um princípio ético fundamental: o conteúdo das sessões não é compartilhado com terceiros, salvo nas exceções previstas em lei e no código de ética profissional. Não envie relatos íntimos ou clínicos por formulário ou mensagem.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-7" id="faq-b7">Qual a diferença entre psicanálise e outras abordagens?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
@@ -233,24 +246,24 @@
     </section>
 
     <!-- ============ CONTATO ============ -->
-    <section class="section" id="contato" aria-labelledby="contato-titulo">
+    <section class="section section--escura" id="contato" aria-labelledby="contato-titulo">
       <div class="container contato__grid">
         <div class="reveal">
           <span class="eyebrow">Contato</span>
           <h2 id="contato-titulo">Vamos conversar?</h2>
           <p class="lead">O primeiro passo pode ser simples: uma mensagem. Sem compromisso, para conhecer o trabalho e tirar dúvidas.</p>
-          <ul class="contato__lista lista-check">
-            <li>WhatsApp: <strong data-fone></strong></li>
-            <li>Resposta combinada diretamente com o profissional</li>
+          <div class="contato__fone"><small>WhatsApp</small><strong data-fone></strong></div>
+          <ul class="lista-check">
             <li>Sigilo e respeito desde o primeiro contato</li>
-            <li>Horários conforme disponibilidade</li>
+            <li>Horários combinados conforme a disponibilidade</li>
+            <li>Atendimento 100% online</li>
           </ul>
-          <a class="btn btn--primario" href="#" data-wa>Agendar pelo WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--claro" href="#" data-wa>Agendar pelo WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
 
         <form class="form reveal" id="form-contato" novalidate>
-          <h3>Prefere enviar seus dados?</h3>
-          <p class="form__aviso"><svg style="display:inline;width:16px;height:16px;vertical-align:-3px;margin-right:6px" aria-hidden="true"><use href="#i-cadeado"/></svg>Este site é estático: <strong>não armazena nem envia seus dados automaticamente</strong>. Ao enviar, abriremos o WhatsApp com uma mensagem preenchida para você revisar. <strong>Não escreva detalhes íntimos, diagnósticos ou relatos clínicos.</strong></p>
+          <h3>Prefere deixar seus dados?</h3>
+          <p class="form__aviso"><svg aria-hidden="true"><use href="#i-cadeado"/></svg><span>Seus dados <strong>não ficam armazenados</strong> neste site. Ao continuar, o WhatsApp abre com a mensagem pronta para você revisar e enviar. <strong>Não escreva detalhes íntimos, diagnósticos ou relatos clínicos.</strong></span></p>
           <div class="campo">
             <label for="f-nome">Nome</label>
             <input type="text" id="f-nome" name="nome" autocomplete="name" aria-describedby="e-nome" required>
@@ -275,7 +288,7 @@
           <div class="campo">
             <div class="campo--check">
               <input type="checkbox" id="f-ok" name="consentimento" required aria-describedby="e-ok">
-              <label for="f-ok">Entendo que o site não armazena meus dados e que não devo informar dados clínicos.</label>
+              <label for="f-ok">Entendo que este site não armazena meus dados e que não devo informar dados clínicos.</label>
             </div>
             <p class="campo__erro" id="e-ok" role="alert"></p>
           </div>
