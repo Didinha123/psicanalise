@@ -59,13 +59,14 @@
     <section class="section section--branco" id="sobre" aria-labelledby="sobre-titulo">
       <div class="container sobre__grid">
         <div class="sobre__foto reveal">
-          <!-- TROQUE a imagem abaixo pela foto profissional: apague data-img e use src="foto.jpg" -->
-          <img data-img="retrato" alt="Foto profissional (substitua pelo retrato do(a) psicanalista)" loading="lazy" width="600" height="750">
+          <!-- Foto profissional: arquivo foto.webp (mesma pasta do index.html) -->
+          <img src="foto.webp" alt="Retrato de Wellington Aparecido, psicanalista" loading="lazy" width="600" height="750">
         </div>
         <div class="reveal">
           <span class="eyebrow">Sobre mim</span>
-          <h2 id="sobre-titulo">Prazer, sou <span data-nome>Nome do(a) Psicanalista</span>.</h2>
-          <p>[Texto de apresentação — edite livremente.] Escreva aqui, com suas palavras, quem você é, o que a levou/o levou à psicanálise e como entende o seu trabalho.</p>
+          <h2 id="sobre-titulo">Prazer, sou <span data-nome>Wellington Aparecido</span>.</h2>
+          <p>Sou psicanalista e ofereço um espaço de escuta cuidadosa, ética e sigilosa, em atendimento online. Se você deseja conhecer o trabalho ou tirar dúvidas, será um prazer conversar.</p>
+          <p><strong>Contato:</strong> WhatsApp <a href="#" data-wa data-fone></a></p>
           <div class="bloco-editavel">
             <h3>Formação e qualificações</h3>
             <p>[Preencha com a sua formação acadêmica, instituição de formação psicanalítica, cursos e registros profissionais — somente informações reais e comprováveis.]</p>
@@ -116,8 +117,8 @@
           </article>
           <article class="card reveal">
             <div class="icone"><svg aria-hidden="true"><use href="#i-tela"/></svg></div>
-            <h3>Presencial ou online</h3>
-            <p>O atendimento pode acontecer em consultório ou por videochamada, conforme a disponibilidade da profissional/do profissional. Consulte as opções pelo WhatsApp.</p>
+            <h3>Atendimento online</h3>
+            <p>As sessões acontecem por videochamada, com a mesma escuta cuidadosa e o mesmo sigilo, no conforto do lugar que você escolher.</p>
           </article>
         </div>
       </div>
@@ -157,22 +158,11 @@
             <h3>Atendimento online</h3>
             <p>Sessões por videochamada, para quem prefere o conforto de estar em casa ou mora em outra cidade. Basta um lugar reservado e uma conexão estável.</p>
             <ul class="card__meta">
-              <li><strong>Modalidade</strong><span>[Plataforma de vídeo — definir]</span></li>
-              <li><strong>Duração</strong><span>[Definir com o profissional]</span></li>
-              <li><strong>Frequência</strong><span>[Definir na conversa inicial]</span></li>
+              <li><strong>Modalidade</strong><span>Videochamada</span></li>
+              <li><strong>Duração</strong><span>Combinada na conversa inicial</span></li>
+              <li><strong>Frequência</strong><span>Combinada na conversa inicial</span></li>
             </ul>
             <a class="btn btn--primario btn--bloco" href="#" data-wa data-wa-msg="Olá! Gostaria de consultar a disponibilidade para atendimento online.">Consultar disponibilidade</a>
-          </article>
-          <article class="card reveal">
-            <div class="icone"><svg aria-hidden="true"><use href="#i-casa"/></svg></div>
-            <h3>Atendimento presencial</h3>
-            <p>Sessões em consultório, em ambiente acolhedor e reservado. <em>[Disponível apenas se o(a) profissional atender presencialmente — edite ou remova este card.]</em></p>
-            <ul class="card__meta">
-              <li><strong>Local</strong><span>[Endereço — a definir]</span></li>
-              <li><strong>Duração</strong><span>[Definir com o profissional]</span></li>
-              <li><strong>Frequência</strong><span>[Definir na conversa inicial]</span></li>
-            </ul>
-            <a class="btn btn--primario btn--bloco" href="#" data-wa data-wa-msg="Olá! Gostaria de consultar a disponibilidade para atendimento presencial.">Consultar disponibilidade</a>
           </article>
         </div>
       </div>
@@ -220,13 +210,13 @@
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-1" id="faq-b1">O que é psicanálise?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
             <div class="faq__resposta" id="faq-1" role="region" aria-labelledby="faq-b1"><div><p>A psicanálise é uma prática de escuta e um campo de conhecimento criados por Sigmund Freud. Por meio da fala livre, busca-se compreender aspectos do funcionamento psíquico que nem sempre são conscientes, como desejos, conflitos e repetições.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-2" id="faq-b2">Como funciona a primeira sessão?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
-            <div class="faq__resposta" id="faq-2" role="region" aria-labelledby="faq-b2"><div><p>[Edite conforme sua prática.] Em geral, é uma conversa de acolhimento em que você conta o que o(a) trouxe até aqui, tira dúvidas sobre o formato do trabalho e avalia se deseja seguir. Não é necessário preparar nada.</p></div></div></div>
+            <div class="faq__resposta" id="faq-2" role="region" aria-labelledby="faq-b2"><div><p>Em geral, é uma conversa de acolhimento em que você conta o que o(a) trouxe até aqui, tira dúvidas sobre o formato do trabalho e avalia se deseja seguir. Não é necessário preparar nada.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-3" id="faq-b3">Quanto tempo dura uma sessão?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
-            <div class="faq__resposta" id="faq-3" role="region" aria-labelledby="faq-b3"><div><p>[Informe a duração real.] A duração e a frequência são combinadas na conversa inicial, conforme o formato de trabalho do(a) profissional.</p></div></div></div>
+            <div class="faq__resposta" id="faq-3" role="region" aria-labelledby="faq-b3"><div><p>A duração e a frequência são combinadas na conversa inicial, conforme o formato de trabalho do profissional.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-4" id="faq-b4">O atendimento pode ser online?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
-            <div class="faq__resposta" id="faq-4" role="region" aria-labelledby="faq-b4"><div><p>[Confirme sua disponibilidade.] Quando o atendimento online é oferecido, as sessões acontecem por videochamada, em ambiente reservado e com conexão estável.</p></div></div></div>
+            <div class="faq__resposta" id="faq-4" role="region" aria-labelledby="faq-b4"><div><p>Sim. O atendimento é realizado exclusivamente online, por videochamada, em ambiente reservado e com conexão estável.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-5" id="faq-b5">Como posso agendar?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
-            <div class="faq__resposta" id="faq-5" role="region" aria-labelledby="faq-b5"><div><p>Pelo botão “Agendar uma conversa”, que abre o WhatsApp com uma mensagem pronta, ou pelo formulário de contato abaixo. Este site não possui sistema automático de agenda: os horários são combinados diretamente com o(a) profissional.</p></div></div></div>
+            <div class="faq__resposta" id="faq-5" role="region" aria-labelledby="faq-b5"><div><p>Pelo botão “Agendar uma conversa”, que abre o WhatsApp com uma mensagem pronta, ou pelo formulário de contato abaixo. Este site não possui sistema automático de agenda: os horários são combinados diretamente com o profissional.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-6" id="faq-b6">Como funciona a confidencialidade?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
             <div class="faq__resposta" id="faq-6" role="region" aria-labelledby="faq-b6"><div><p>O sigilo é um princípio ético fundamental: o conteúdo das sessões não é compartilhado com terceiros, salvo nas exceções previstas em lei e no código de ética profissional. Não envie relatos íntimos ou clínicos por formulário ou mensagem.</p></div></div></div>
           <div class="faq__item"><h3><button class="faq__pergunta" aria-expanded="false" aria-controls="faq-7" id="faq-b7">Qual a diferença entre psicanálise e outras abordagens?<span class="faq__sinal" aria-hidden="true"></span></button></h3>
@@ -243,7 +233,8 @@
           <h2 id="contato-titulo">Vamos conversar?</h2>
           <p class="lead">O primeiro passo pode ser simples: uma mensagem. Sem compromisso, para conhecer o trabalho e tirar dúvidas.</p>
           <ul class="contato__lista lista-check">
-            <li>Resposta combinada diretamente com o(a) profissional</li>
+            <li>WhatsApp: <strong data-fone></strong></li>
+            <li>Resposta combinada diretamente com o profissional</li>
             <li>Sigilo e respeito desde o primeiro contato</li>
             <li>Horários conforme disponibilidade</li>
           </ul>
