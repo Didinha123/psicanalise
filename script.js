@@ -23,27 +23,13 @@ const CONFIG = {
    2) ARTIGOS (demonstrativos — edite título, resumo e texto livremente)
    Cada parágrafo é um item do array "texto".
    --------------------------------------------------------------------------- */
-// Ilustrações embutidas (SVG) — assim o site funciona com apenas 3 arquivos.
-// Para usar fotos próprias, troque o valor por um caminho, ex.: "capa1.jpg".
-const svgUri = (s) => "data:image/svg+xml;charset=utf-8," + encodeURIComponent(s);
-const NS = 'xmlns="http://www.w3.org/2000/svg"';
-const IMG = {
-  hero: svgUri(`<svg ${NS} viewBox="0 0 800 1000"><defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E7D6"/><stop offset="1" stop-color="#EBDDC8"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9B79F"/><stop offset="1" stop-color="#8A9A82"/></linearGradient></defs><rect width="800" height="1000" fill="url(#a)"/><circle cx="540" cy="330" r="150" fill="#E8C9A6" opacity=".55"/><circle cx="540" cy="330" r="96" fill="#F6DDBE" opacity=".9"/><path d="M0 640C160 540 300 560 430 620S700 660 800 580V1000H0Z" fill="#C9D2BF"/><path d="M0 720C140 650 280 690 420 730S680 760 800 690V1000H0Z" fill="url(#b)"/><path d="M0 830C200 770 340 840 520 830S720 790 800 810V1000H0Z" fill="#6F8266"/><g fill="#fff" opacity=".55"><ellipse cx="190" cy="220" rx="70" ry="16"/><ellipse cx="236" cy="206" rx="46" ry="14"/><ellipse cx="640" cy="170" rx="60" ry="13"/></g></svg>`),
-  retrato: svgUri(`<svg ${NS} viewBox="0 0 600 750"><rect width="600" height="750" fill="#E9DFCF"/><circle cx="300" cy="290" r="96" fill="#C9D2BF"/><path d="M110 750C110 560 200 480 300 480S490 560 490 750Z" fill="#C9D2BF"/><text x="300" y="650" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#6B5445">Substitua por sua foto</text></svg>`),
-  "artigo-1": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F1E8D9"/><rect x="90" y="60" width="240" height="250" rx="8" fill="#FBF7F0" stroke="#C9B8A0" stroke-width="6"/><path d="M210 60V310M90 185H330" stroke="#C9B8A0" stroke-width="4"/><circle cx="270" cy="122" r="30" fill="#F6DDBE"/><rect y="380" width="800" height="120" fill="#B9A18A"/><rect x="330" y="340" width="64" height="40" rx="6" fill="#fff"/><path d="M394 350c20 0 20 22 0 22" stroke="#fff" stroke-width="6" fill="none"/><rect x="430" y="362" width="200" height="18" rx="4" fill="#F6EFE4"/><rect x="440" y="348" width="180" height="14" rx="3" fill="#fff"/><path d="M660 380h70l-8-46h-54z" fill="#6B5445"/><path d="M695 334c0-30 4-58 14-84" stroke="#6F8266" stroke-width="5" fill="none"/><path d="M709 252c-30-4-44-22-46-44 28 4 44 22 46 44zM712 290c28-6 40-26 40-46-26 6-40 24-40 46z" fill="#8A9A82"/></svg>`),
-  "artigo-2": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F3EBDD"/><circle cx="400" cy="200" r="100" fill="#F6DDBE" opacity=".4"/><rect y="400" width="800" height="100" fill="#D9C9B3"/><rect x="130" y="190" width="60" height="210" rx="26" fill="#6F8266"/><rect x="150" y="250" width="170" height="150" rx="30" fill="#8A9A82"/><rect x="170" y="330" width="150" height="40" rx="14" fill="#A9B79F"/><rect x="610" y="190" width="60" height="210" rx="26" fill="#B38E6E"/><rect x="480" y="250" width="170" height="150" rx="30" fill="#C9A98A"/><rect x="480" y="330" width="150" height="40" rx="14" fill="#D8BEA3"/><path d="M400 215V400" stroke="#6B5445" stroke-width="6"/><path d="M360 215h80l-20-56h-40z" fill="#F6DDBE"/></svg>`),
-  "artigo-3": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#EDE3D3"/><path d="M0 200C140 130 260 270 400 200S660 130 800 200V500H0Z" fill="#DCE3D3"/><path d="M0 280C140 210 260 350 400 280S660 210 800 280V500H0Z" fill="#B9C5AE"/><path d="M0 360C140 290 260 430 400 360S660 290 800 360V500H0Z" fill="#8A9A82"/></svg>`),
-  "artigo-4": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F2E9DA"/><path d="M220 270l-20 50 60-50z" fill="#A9B79F"/><rect x="150" y="130" width="300" height="140" rx="36" fill="#A9B79F"/><g fill="#F6EFE4"><circle cx="250" cy="200" r="10"/><circle cx="300" cy="200" r="10"/><circle cx="350" cy="200" r="10"/></g><path d="M580 360l20 50-60-50z" fill="#F6EFE4"/><rect x="350" y="220" width="300" height="140" rx="36" fill="#F6EFE4" stroke="#8A9A82" stroke-width="3"/><path d="M400 265h180M400 295h130M400 325h160" stroke="#8A9A82" stroke-width="8" stroke-linecap="round"/></svg>`),
-  "artigo-5": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F3E7D6"/><circle cx="400" cy="230" r="70" fill="#F6DDBE"/><path d="M0 300C150 250 300 280 400 290S650 260 800 300V500H0Z" fill="#C9D2BF"/><path d="M0 360C200 320 320 350 400 350S640 330 800 370V500H0Z" fill="#8A9A82"/><path d="M360 500L392 330h16l32 170z" fill="#EBDDC8"/></svg>`),
-};
-
 const ARTIGOS = [
   {
     id: "autoconhecimento-no-dia-a-dia",
     tema: "Autoconhecimento",
     titulo: "Autoconhecimento na vida cotidiana",
     resumo: "Pequenos momentos de pausa e atenção podem revelar muito sobre a forma como vivemos.",
-    imagem: IMG["artigo-1"],
+    imagem: "artigo-1.jpg",
     texto: [
       "Autoconhecimento costuma ser imaginado como algo grandioso, reservado a momentos de crise ou grandes decisões. Na prática, ele começa em situações simples: perceber o que nos irrita num dia comum, o que nos cansa, o que nos alegra sem que saibamos bem por quê.",
       "Prestar atenção às próprias reações, sem pressa de julgá-las, é um primeiro passo. Muitas vezes agimos no automático, repetindo respostas que aprendemos há muito tempo. Notar essa repetição já abre espaço para pensar sobre ela.",
@@ -56,7 +42,7 @@ const ARTIGOS = [
     tema: "Relações",
     titulo: "Relações e vínculos afetivos",
     resumo: "Como nos ligamos aos outros diz algo sobre nossa história — e pode ser pensado com cuidado.",
-    imagem: IMG["artigo-2"],
+    imagem: "artigo-2.jpg",
     texto: [
       "Desde cedo, aprendemos o que é se relacionar: como pedir, como esperar, como lidar com a presença e com a ausência de quem importa para nós. Essas experiências deixam marcas na maneira como construímos vínculos na vida adulta.",
       "Por isso, é comum que algumas situações se repitam: escolhas parecidas, conflitos semelhantes, dificuldades em dizer o que sentimos. Reconhecer essa recorrência não é buscar culpados, mas compreender de que modo cada pessoa se coloca nas relações.",
@@ -69,7 +55,7 @@ const ARTIGOS = [
     tema: "Emoções",
     titulo: "Emoções e conflitos internos",
     resumo: "Sentir coisas contraditórias é humano. Escutar esses conflitos pode ser um caminho de compreensão.",
-    imagem: IMG["artigo-3"],
+    imagem: "artigo-3.jpg",
     texto: [
       "É possível desejar uma mudança e, ao mesmo tempo, temê-la. Sentir carinho e raiva pela mesma pessoa. Querer algo e se atrapalhar para alcançá-lo. Esses conflitos fazem parte da experiência humana e nem sempre têm explicação imediata.",
       "Na tradição psicanalítica, esses impasses não são vistos como falhas a serem eliminadas, mas como expressões de nossa história e de nossos desejos, que merecem ser escutadas com atenção.",
@@ -82,7 +68,7 @@ const ARTIGOS = [
     tema: "Escuta",
     titulo: "A importância da escuta",
     resumo: "Ser ouvido, sem pressa nem julgamento, é uma experiência que transforma a forma de falar de si.",
-    imagem: IMG["artigo-4"],
+    imagem: "artigo-4.jpg",
     texto: [
       "Vivemos cercados de conselhos, opiniões e respostas rápidas. Raramente encontramos alguém que escute sem querer corrigir, consolar às pressas ou dar um veredito.",
       "Na psicanálise, a escuta tem um lugar central. Escutar não é apenas ouvir palavras: é atentar para hesitações, repetições, silêncios e para aquilo que surge de modo inesperado no que é dito.",
@@ -95,7 +81,7 @@ const ARTIGOS = [
     tema: "Reflexões",
     titulo: "Reflexões sobre o comportamento humano",
     resumo: "Por que fazemos o que fazemos? Algumas perguntas que a psicanálise ajuda a formular.",
-    imagem: IMG["artigo-5"],
+    imagem: "artigo-5.jpg",
     texto: [
       "Por que repetimos escolhas que sabemos que não nos fazem bem? Por que esquecemos o que era importante ou nos emocionamos com algo aparentemente pequeno? Perguntas como essas acompanham a humanidade há muito tempo.",
       "A psicanálise parte da ideia de que nem tudo o que move nosso comportamento é plenamente consciente. Isso não significa que sejamos reféns do desconhecido, mas que há dimensões de nós mesmos que se revelam aos poucos.",
@@ -315,7 +301,7 @@ function iniciarWhatsAppFlutuante() {
   a.href = "#";
   a.setAttribute("data-wa", "");
   a.setAttribute("aria-label", "Conversar pelo WhatsApp");
-  a.innerHTML = `${ICONE_WA}<span>WhatsApp</span>`;
+  a.innerHTML = `${ICONE_WA}<span>WhatsApp</span><span class="wa-balao" aria-hidden="true">Vamos conversar?</span>`;
   document.body.appendChild(a);
 }
 
@@ -443,7 +429,6 @@ function rotear() {
 
 /* ---- Imagens embutidas (data-img) e nome configurado (data-nome) ---- */
 function preencherDados() {
-  $$("[data-img]").forEach((el) => { el.src = IMG[el.dataset.img]; });
   $$("[data-nome]").forEach((el) => { el.textContent = CONFIG.nome; });
   $$("[data-fone]").forEach((el) => { el.textContent = foneFormatado(); });
 }
