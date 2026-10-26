@@ -9,10 +9,10 @@
    1) CONFIGURAÇÃO — edite aqui
    --------------------------------------------------------------------------- */
 const CONFIG = {
-  nome: "Nome do(a) Psicanalista",        // TODO: substitua pelo nome profissional
+  nome: "Wellington Aparecido",        
   subtitulo: "Psicanálise",
   // Número com DDI + DDD, só dígitos. Ex.: "5511999999999". Vazio = botão avisa que falta configurar.
-  whatsapp: "",
+  whatsapp: "5511956178269",
   // Usuário do Instagram, sem @. Vazio = o link não aparece no rodapé.
   instagram: "",
   mensagemPadrao:
@@ -30,11 +30,11 @@ const NS = 'xmlns="http://www.w3.org/2000/svg"';
 const IMG = {
   hero: svgUri(`<svg ${NS} viewBox="0 0 800 1000"><defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E7D6"/><stop offset="1" stop-color="#EBDDC8"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9B79F"/><stop offset="1" stop-color="#8A9A82"/></linearGradient></defs><rect width="800" height="1000" fill="url(#a)"/><circle cx="540" cy="330" r="150" fill="#E8C9A6" opacity=".55"/><circle cx="540" cy="330" r="96" fill="#F6DDBE" opacity=".9"/><path d="M0 640C160 540 300 560 430 620S700 660 800 580V1000H0Z" fill="#C9D2BF"/><path d="M0 720C140 650 280 690 420 730S680 760 800 690V1000H0Z" fill="url(#b)"/><path d="M0 830C200 770 340 840 520 830S720 790 800 810V1000H0Z" fill="#6F8266"/><g fill="#fff" opacity=".55"><ellipse cx="190" cy="220" rx="70" ry="16"/><ellipse cx="236" cy="206" rx="46" ry="14"/><ellipse cx="640" cy="170" rx="60" ry="13"/></g></svg>`),
   retrato: svgUri(`<svg ${NS} viewBox="0 0 600 750"><rect width="600" height="750" fill="#E9DFCF"/><circle cx="300" cy="290" r="96" fill="#C9D2BF"/><path d="M110 750C110 560 200 480 300 480S490 560 490 750Z" fill="#C9D2BF"/><text x="300" y="650" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#6B5445">Substitua por sua foto</text></svg>`),
-  "artigo-1": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#EFE6D8"/><circle cx="400" cy="250" r="210" fill="#DCE3D3"/><circle cx="400" cy="250" r="150" fill="#C5D0BB"/><circle cx="400" cy="250" r="90" fill="#A9B79F"/><circle cx="400" cy="250" r="36" fill="#F6EFE4"/></svg>`),
-  "artigo-2": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F3EBDD"/><circle cx="340" cy="250" r="140" fill="#A9B79F" opacity=".7"/><circle cx="460" cy="250" r="140" fill="#C9A98A" opacity=".6"/><path d="M400 130A140 140 0 0 1 400 370A140 140 0 0 1 400 130Z" fill="#F6EFE4" opacity=".75"/></svg>`),
+  "artigo-1": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F1E8D9"/><rect x="90" y="60" width="240" height="250" rx="8" fill="#FBF7F0" stroke="#C9B8A0" stroke-width="6"/><path d="M210 60V310M90 185H330" stroke="#C9B8A0" stroke-width="4"/><circle cx="270" cy="122" r="30" fill="#F6DDBE"/><rect y="380" width="800" height="120" fill="#B9A18A"/><rect x="330" y="340" width="64" height="40" rx="6" fill="#fff"/><path d="M394 350c20 0 20 22 0 22" stroke="#fff" stroke-width="6" fill="none"/><rect x="430" y="362" width="200" height="18" rx="4" fill="#F6EFE4"/><rect x="440" y="348" width="180" height="14" rx="3" fill="#fff"/><path d="M660 380h70l-8-46h-54z" fill="#6B5445"/><path d="M695 334c0-30 4-58 14-84" stroke="#6F8266" stroke-width="5" fill="none"/><path d="M709 252c-30-4-44-22-46-44 28 4 44 22 46 44zM712 290c28-6 40-26 40-46-26 6-40 24-40 46z" fill="#8A9A82"/></svg>`),
+  "artigo-2": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F3EBDD"/><circle cx="400" cy="200" r="100" fill="#F6DDBE" opacity=".4"/><rect y="400" width="800" height="100" fill="#D9C9B3"/><rect x="130" y="190" width="60" height="210" rx="26" fill="#6F8266"/><rect x="150" y="250" width="170" height="150" rx="30" fill="#8A9A82"/><rect x="170" y="330" width="150" height="40" rx="14" fill="#A9B79F"/><rect x="610" y="190" width="60" height="210" rx="26" fill="#B38E6E"/><rect x="480" y="250" width="170" height="150" rx="30" fill="#C9A98A"/><rect x="480" y="330" width="150" height="40" rx="14" fill="#D8BEA3"/><path d="M400 215V400" stroke="#6B5445" stroke-width="6"/><path d="M360 215h80l-20-56h-40z" fill="#F6DDBE"/></svg>`),
   "artigo-3": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#EDE3D3"/><path d="M0 200C140 130 260 270 400 200S660 130 800 200V500H0Z" fill="#DCE3D3"/><path d="M0 280C140 210 260 350 400 280S660 210 800 280V500H0Z" fill="#B9C5AE"/><path d="M0 360C140 290 260 430 400 360S660 290 800 360V500H0Z" fill="#8A9A82"/></svg>`),
-  "artigo-4": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F2E9DA"/><path d="M260 500V250A140 140 0 0 1 540 250V500Z" fill="#C9D2BF"/><path d="M310 500V260A90 90 0 0 1 490 260V500Z" fill="#8A9A82"/><path d="M360 500V270A40 40 0 0 1 440 270V500Z" fill="#F6EFE4"/></svg>`),
-  "artigo-5": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#EFE6D8"/><ellipse cx="400" cy="400" rx="170" ry="48" fill="#8A9A82"/><ellipse cx="400" cy="330" rx="125" ry="40" fill="#B9A18A"/><ellipse cx="400" cy="268" rx="86" ry="32" fill="#C9D2BF"/><ellipse cx="400" cy="216" rx="52" ry="24" fill="#6B5445" opacity=".85"/></svg>`),
+  "artigo-4": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F2E9DA"/><path d="M220 270l-20 50 60-50z" fill="#A9B79F"/><rect x="150" y="130" width="300" height="140" rx="36" fill="#A9B79F"/><g fill="#F6EFE4"><circle cx="250" cy="200" r="10"/><circle cx="300" cy="200" r="10"/><circle cx="350" cy="200" r="10"/></g><path d="M580 360l20 50-60-50z" fill="#F6EFE4"/><rect x="350" y="220" width="300" height="140" rx="36" fill="#F6EFE4" stroke="#8A9A82" stroke-width="3"/><path d="M400 265h180M400 295h130M400 325h160" stroke="#8A9A82" stroke-width="8" stroke-linecap="round"/></svg>`),
+  "artigo-5": svgUri(`<svg ${NS} viewBox="0 0 800 500"><rect width="800" height="500" fill="#F3E7D6"/><circle cx="400" cy="230" r="70" fill="#F6DDBE"/><path d="M0 300C150 250 300 280 400 290S650 260 800 300V500H0Z" fill="#C9D2BF"/><path d="M0 360C200 320 320 350 400 350S640 330 800 370V500H0Z" fill="#8A9A82"/><path d="M360 500L392 330h16l32 170z" fill="#EBDDC8"/></svg>`),
 };
 
 const ARTIGOS = [
@@ -143,6 +143,11 @@ function mostrarToast(msg) {
 }
 
 /* ---- WhatsApp ---- */
+function foneFormatado() {
+  const m = /^55(\d{2})(\d{5})(\d{4})$/.exec(CONFIG.whatsapp);
+  return m ? `(${m[1]}) ${m[2]}-${m[3]}` : "";
+}
+
 const waConfigurado = () => /^\d{10,15}$/.test(CONFIG.whatsapp);
 const waLink = (msg) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg || CONFIG.mensagemPadrao)}`;
 
@@ -207,7 +212,7 @@ function montarRodape() {
         <div>
           <h4>${esc(CONFIG.nome)}</h4>
           <p>Um espaço de escuta cuidadosa, com respeito e sigilo.</p>
-          <p>Atendimento online e/ou presencial, conforme disponibilidade — consulte pelo WhatsApp.</p>
+          <p>Atendimento exclusivamente online, por videochamada. Consulte os horários pelo WhatsApp.</p>
         </div>
         <div>
           <h4>Navegue</h4>
@@ -223,7 +228,7 @@ function montarRodape() {
         <div>
           <h4>Contato</h4>
           <ul class="footer__lista">
-            <li><a href="#" data-wa data-wa-msg="${esc(CONFIG.mensagemPadrao)}">WhatsApp</a></li>
+            <li><a href="#" data-wa data-wa-msg="${esc(CONFIG.mensagemPadrao)}">WhatsApp ${foneFormatado()}</a></li>
             ${insta}
             <li><a href="#/privacidade">Política de privacidade</a></li>
           </ul>
@@ -364,7 +369,7 @@ function telaPrivacidade() {
       <h2>Sigilo profissional</h2>
       <p>As informações compartilhadas durante o atendimento seguem o sigilo profissional previsto no código de ética aplicável.</p>
       <h2>Seus direitos</h2>
-      <p>Você pode solicitar informações, correção ou exclusão de dados eventualmente tratados pelo(a) profissional, entrando em contato pelos canais indicados neste site.</p>
+      <p>Você pode solicitar informações, correção ou exclusão de dados eventualmente tratados pelo profissional, entrando em contato pelos canais indicados neste site.</p>
       <h2>Natureza do conteúdo</h2>
       <p>Os conteúdos deste site são informativos e não substituem uma avaliação profissional individual.</p>
       <p style="margin-top:2.5rem"><a class="btn btn--secundario" href="#inicio">Voltar ao início</a></p>
@@ -440,6 +445,7 @@ function rotear() {
 function preencherDados() {
   $$("[data-img]").forEach((el) => { el.src = IMG[el.dataset.img]; });
   $$("[data-nome]").forEach((el) => { el.textContent = CONFIG.nome; });
+  $$("[data-fone]").forEach((el) => { el.textContent = foneFormatado(); });
 }
 
 /* ---- Formulário com validação ---- */
