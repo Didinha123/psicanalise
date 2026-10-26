@@ -306,6 +306,8 @@ function iniciarWhatsAppFlutuante() {
 }
 
 /* ---- Cards de artigos ---- */
+const tempoLeitura = (a) => Math.max(1, Math.round(a.texto.join(" ").split(/\s+/).length / 200));
+
 function cardArtigo(a) {
   return `
     <article class="card artigo-card reveal">
@@ -313,7 +315,7 @@ function cardArtigo(a) {
         <img src="${a.imagem}" alt="" loading="lazy" width="800" height="500">
       </a>
       <div class="artigo-card__corpo">
-        <span class="artigo-card__tag">${esc(a.tema)}</span>
+        <span class="artigo-card__meta">${esc(a.tema)} <span>· ${tempoLeitura(a)} min de leitura</span></span>
         <h3>${esc(a.titulo)}</h3>
         <p>${esc(a.resumo)}</p>
         <a class="link-seta" href="#/artigo/${a.id}" aria-label="Ler artigo: ${esc(a.titulo)}">Ler artigo</a>
@@ -330,7 +332,7 @@ function telaArtigos() {
       <div class="section__head reveal">
         <span class="eyebrow">Conteúdos</span>
         <h1>Reflexões e artigos</h1>
-        <p class="lead">Textos educativos e demonstrativos — edite-os em <code>ARTIGOS</code>, no script.js. Não representam diagnóstico individual.</p>
+        <p class="lead">Textos educativos sobre escuta, emoções e relações. Não representam diagnóstico individual nem substituem avaliação profissional.</p>
       </div>
     </div></section>
     <section class="section" style="padding-top:1rem"><div class="container">
@@ -343,15 +345,14 @@ function telaPrivacidade() {
     <section class="section" style="padding-top:3rem"><div class="container texto-legal">
       <span class="eyebrow">Privacidade</span>
       <h1>Política de Privacidade</h1>
-      <p class="aviso" style="margin-top:0">Modelo demonstrativo. Revise com um(a) profissional jurídico(a) e adapte à sua realidade (LGPD) antes de publicar.</p>
       <h2>Dados que este site coleta</h2>
       <p>Este é um site estático. O formulário de contato <strong>não armazena nem envia dados a nenhum servidor</strong>. Ao enviar, o navegador apenas abre o WhatsApp com uma mensagem preenchida, que você revisa e decide se envia.</p>
       <h2>Informações que não devem ser enviadas</h2>
       <p>Não informe diagnósticos, relatos clínicos ou detalhes íntimos pelo formulário ou nas primeiras mensagens. Esses assuntos devem ser tratados nas sessões.</p>
       <h2>WhatsApp e serviços de terceiros</h2>
-      <p>Ao usar o WhatsApp, suas informações passam a ser tratadas conforme os termos e a política de privacidade do próprio aplicativo. O site também carrega fontes do Google Fonts, o que pode envolver o envio do seu endereço IP ao provedor. [Se necessário, hospede as fontes localmente.]</p>
+      <p>Ao usar o WhatsApp, suas informações passam a ser tratadas conforme os termos e a política de privacidade do próprio aplicativo. O site também carrega fontes do Google Fonts, o que pode envolver o envio do seu endereço IP ao provedor.</p>
       <h2>Cookies e análise de acesso</h2>
-      <p>[Informe aqui se utiliza cookies ou ferramentas de análise. Na versão atual, o site não utiliza.]</p>
+      <p>Este site não utiliza cookies de rastreamento nem ferramentas de análise de acesso.</p>
       <h2>Sigilo profissional</h2>
       <p>As informações compartilhadas durante o atendimento seguem o sigilo profissional previsto no código de ética aplicável.</p>
       <h2>Seus direitos</h2>
@@ -377,7 +378,7 @@ function telaArtigo(id) {
       <p class="eyebrow" style="margin-top:2rem">${esc(a.tema)}</p>
       <h1>${esc(a.titulo)}</h1>
       <p class="lead">${esc(a.resumo)}</p>
-      <img class="artigo__capa" src="${a.imagem}" alt="" width="800" height="500">
+      <img class="artigo__capa" src="${a.imagem}" alt="Imagem ilustrativa do artigo: ${esc(a.titulo)}" width="800" height="500">
       <div class="artigo__texto">${a.texto.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
       <div class="aviso">Conteúdo educativo e informativo. Não representa diagnóstico individual nem substitui uma avaliação profissional.</div>
       <p style="margin-top:2rem"><a class="btn btn--primario" href="#" data-wa data-wa-msg="Olá! Li o artigo “${esc(a.titulo)}” e gostaria de saber mais sobre os atendimentos.">Agendar uma conversa ${ICONE_SETA}</a></p>
