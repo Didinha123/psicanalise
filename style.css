@@ -340,3 +340,8 @@ ul { padding-left: 1.2em; }
   .wa-flutuante { padding: .9rem; }
   .section__head { margin-bottom: 2.2rem; }
 }
+
+/* Foto do profissional: enquadra o rosto */
+.sobre__foto img { object-position: center 15%; }
+/* Modalidade única (somente online): card centralizado */
+#atendimento .grade--2 { grid-template-columns: minmax(0, 560px); justify-content: center; }
